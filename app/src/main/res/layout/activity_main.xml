@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/camera_surfaceview"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <Button
+        android:id="@+id/id_getImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="slient" />
+
+    <Button
+        android:id="@+id/id_Detect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/id_getImage"
+        android:enabled="false"
+        android:text="Detect" />
+
+    <TextView
+        android:id="@+id/id_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_photo"
+        android:layout_marginLeft="16dp"
+        android:gravity="center"
+        android:text="dfsfdsf" />
+
+    <ImageView
+        android:id="@+id/id_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/t4" />
+
+    <FrameLayout
+        android:id="@+id/id_waitting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/wait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/id_age_and_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hint"
+            android:drawableLeft="@drawable/hint"
+            android:gravity="center"
+            android:text="2323"
+            android:textColor="#ffff00ff"
+            android:textSize="22sp"
+            android:visibility="invisible" />
+    </FrameLayout>
+</RelativeLayout>
